@@ -1,157 +1,386 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ff5f5f;
 }
 
 /* Top bar ---  */
-.logo{
-    width: 17%;
-    height: 50px;
-    float: left;
+.logo {
+  width: 17%;
+  height: 50px;
+  float: left;
 }
-.logo img{
-    width: 100%;
-    height: 50px;
-}
-.name-heading  {
-    width: 83%;
-    background-image: linear-gradient(to right, #ff5f5f, #ff0000, rgb(255, 92, 87), #ff2222);
-    height: 50px;
-    margin-left: 17%;
-}
-.main .name-heading h2{
-    padding: 13px;
+.logo img {
+  width: 100%;
+  height: 55px;
 }
 
-.prof-info{
-    border: 2px solid red;
-    height: auto;
-    float: right;
-    width: 82%;
-    background-color: rgba(160, 255, 255, 0.619);
+.name-heading {
+  width: 83%;
+  background-image: linear-gradient(
+    to right,
+    #ff5f5f,
+    #ff0000,
+    rgb(255, 92, 87),
+    #ff2222
+  );
+  height: auto;
+  margin-left: 17%;
 }
-.prof-info img{
-    margin-left: 20%;
-    width: 100px;
-    float: left;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: 2px solid black;
-    border-radius: 45%;
-    background-image: linear-gradient(rgb(255, 221, 159), rgb(255, 192, 74));
+.main .name-heading h2 {
+  padding: 13px;
 }
-.prof-info p{
-    font-weight: bold;
-    float: left;
-    margin-left: 20px;
-    margin-top: 30px;
+
+.prof-info {
+  /* border: 2px solid red; */
+  height: auto;
+  float: right;
+  width: 83%;
+  background-color: rgba(160, 255, 255, 0.619);
+}
+.prof-info img {
+  margin-left: 20%;
+  width: 100px;
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px solid black;
+  border-radius: 45%;
+  background-image: linear-gradient(rgb(255, 221, 159), rgb(255, 192, 74));
+}
+.prof-info p {
+  font-weight: bold;
+  float: left;
+  margin-left: 20px;
+  margin-top: 30px;
 }
 
 /* Navigation bar --- */
-.dashboard .nav{
-    width: 17%;
-    height: auto;
-    float: left;
-    background-color: rgb(255, 201, 102);
-    background-image: linear-gradient(rgb(255, 201, 102), orange);
+.dashboard .nav {
+  width: 17%;
+  height: auto;
+  float: left;
+  background-color: rgb(255, 201, 102);
+  background-image: linear-gradient(rgb(255, 201, 102), orange);
 }
-.dashboard .nav .prof img{
-    margin: auto;
+.dashboard .nav .prof img {
+  margin: auto;
 }
-.dashboard .nav .prof{
-    text-align: center;
-    margin: 10px;
+.dashboard .nav .prof {
+  text-align: center;
+  margin: 10px;
 }
-.dashboard .nav img{
-    width: 50px;
-    border: 3px solid white;
-    border-radius: 30px;
+.dashboard .nav img {
+  width: 50px;
+  border: 3px solid white;
+  border-radius: 30px;
 }
-.dashboard .nav a{
-    text-decoration: none;
-    color: black;
-    display: block;
-    padding: 10px;
+.dashboard .nav a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 10px;
 }
-.dashboard .nav a:hover{
-    background-color: rgb(204, 133, 0);
+.dashboard .nav a:hover {
+  background-color: rgb(204, 133, 0);
 }
 
-.dash h2{
-    text-align: center;
+.dash h2 {
+  text-align: center;
 }
 
 /* notice */
 .dashboard .dash .notice::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
-.dashboard .dash .notice{
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-  }
-.dashboard .dash .notice{
-    text-align: center;
-    margin: 8px;
-    float: right;
-    overflow-y: scroll;
-    width: 40%;
-    background-image: linear-gradient(rgb(158, 158, 255), lightblue);
-    height: 200px;
+.dashboard .dash .notice {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
-.dashboard .dash .notices{
-    border: 2px solid red;
-    margin: auto;
-    width: 96%;
-    height: 70%;
+.dashboard .dash .notice {
+  text-align: center;
+  margin: 8px;
+  float: right;
+  overflow-y: scroll;
+  width: 40%;
+  background-image: linear-gradient(rgb(158, 158, 255), lightblue);
+  height: 200px;
+}
+.dashboard .dash .notice .notices {
+  border: 2px solid red;
+  margin: auto;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  width: 96%;
+  height: 50%;
+}
+.dashboard .dash .schedule .notices {
+  border: 2px solid red;
+  margin: auto;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  width: 96%;
+  height: 50%;
+}
+.dashboard .dash .news .notices {
+  border: 2px solid red;
+  margin: auto;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  width: 96%;
+  height: 50%;
+}
+.dashboard .dash .placement .notices {
+  border: 2px solid red;
+  margin: auto;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  width: 96%;
+  height: 50%;
 }
 
 /* schedule */
 .dashboard .dash .schedule::-webkit-scrollbar {
-    display: none; /* Chrome and Safari */
+  display: none; /* Chrome and Safari */
 }
-.dashboard .dash .schedule{
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-  }
-.dashboard .dash .schedule{
-    margin: 8px;
-    float: right;
-    overflow-y: scroll;
-    width: 40%;
-    background-image: linear-gradient(rgb(158, 158, 255), lightblue);
-    height: 200px;
+.dashboard .dash .schedule {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.dashboard .dash .schedule {
+  margin: 8px;
+  float: right;
+  overflow-y: scroll;
+  width: 40%;
+  background-image: linear-gradient(rgb(158, 158, 255), lightblue);
+  height: 200px;
 }
 
 /* news */
 .dashboard .dash .news::-webkit-scrollbar {
-    display: none;  /* Chrome and Safari */
+  display: none; /* Chrome and Safari */
 }
-.dashboard .dash .news{
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-  }
-.dashboard .dash .news{
-    margin: 8px;
-    float: right;
-    overflow-y: scroll;
-    width: 40%;
-    background-image: linear-gradient(rgb(158, 158, 255), lightblue);
-    height: 200px;
+.dashboard .dash .news {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.dashboard .dash .news {
+  margin: 8px;
+  float: right;
+  overflow-y: scroll;
+  width: 40%;
+  background-image: linear-gradient(rgb(158, 158, 255), lightblue);
+  height: 200px;
 }
 
 /* placement */
 .dashboard .dash .placement::-webkit-scrollbar {
-    display: none;  /* Chrome and Safari */
+  display: none; /* Chrome and Safari */
 }
-.dashboard .dash .placement{
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+.dashboard .dash .placement {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.dashboard .dash .placement {
+  margin: 8px;
+  float: right;
+  overflow-y: scroll;
+  width: 40%;
+  background-image: linear-gradient(rgb(158, 158, 255), lightblue);
+  height: 200px;
+}
+.highlights {
+  float: left;
+  border: 1px solid black;
+  width: auto;
+  height: 100%;
+  margin: 5px;
+}
+.highlights p {
+  margin: 4px;
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 865px) {
+    .name-heading {
+      margin-left: 20px;
+      width: auto;
+    }
   }
-.dashboard .dash .placement{
-    margin: 8px;
-    float: right;
-    overflow-y: scroll;
-    width: 40%;
-    background-image: linear-gradient(rgb(158, 158, 255), lightblue);
+
+/* prof div */
+@media screen and (max-width: 865px) {
+  .dashboard .dash .prof-info {
+    float: none;
+    text-align: center;
+    margin: auto;
+    margin-right: 0;
+    margin-bottom: 4pxś;
+    width: auto;
+  }
+}
+@media screen and (max-width: 865px) {
+  .dashboard .dash .prof-info img {
+    float: none;
+    /* text-align: center; */
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 865px) {
+  .dashboard .dash .prof-info p {
+    float: none;
+    text-align: left;
+    margin-top: 0;
+    padding-bottom: 10px;
+    padding-left: 16%;
+  }
+}
+
+/* for notice, sedule, placement and news div */
+@media screen and (max-width: 1100px) {
+  .dashboard .dash .notice {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .dashboard .dash .schedule {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .dashboard .dash .news {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .dashboard .dash .placement {
+    width: 80%;
+  }
+}
+
+/* Hamburger style */
+
+@media screen and (max-width: 645px) {
+  .dashboard .nav {
+    display: none;
+  }
+  .dashboard .dash .notice {
+    width: 100%;
+    padding-left: 14px;
+    margin-right: 0;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  .dashboard .dash .news {
+    width: 100%;
+    padding-left: 14px;
+    margin-right: 0;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  .dashboard .dash .schedule {
+    width: 100%;
+    padding-left: 14px;
+    margin-right: 0;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  .dashboard .dash .placement {
+    width: 100%;
+    padding-left: 14px;
+    margin-right: 0;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+}
+@media screen and (max-width: 727px) {
+  .dashboard .nav i {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 645px) {
+  .main .logo {
+    display: none;
+  }
+  .dashboard .dash .prof-info p {
+    padding-left: 5px;
+  }
+}
+
+/* Hide the navigation menu by default */
+.navbar {
+  height: auto;
+  background-color: rgb(255, 201, 102);
+  background-image: linear-gradient(rgb(255, 201, 102), orange);
+}
+.navbar a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 10px;
+}
+.navbar a:hover {
+  background-color: rgb(204, 133, 0);
+}
+
+.navbar {
+  display: none;
+  height: 200px;
+  overflow-y: scroll;
+}
+.navbar::-webkit-scrollbar {
+    display: none;
+}
+
+.menu-toggle i{
+    display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.navbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.menu-toggle {
+  display: none; /* Hide the hamburger icon by default */
+}
+.navbar a::-webkit-scrollbar {
+  display: none; /* Chrome and Safari */
+}
+.navbar a {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.menu-toggle{
+    /* display: block; */
+    margin: 5px;
+}
+
+/* Media query to show/hide elements based on screen width */
+@media screen and (max-width: 645px) {
+  .navbar {
+    transition: 1s ease;
+    display: none; /* Hide the navigation menu */
+    width: 100%;
     height: 200px;
+  }
+  .menu-toggle{
+    display: block;
+  }
+  .menu-toggle i{
+    display: block;
+}
+}
+
+/* Add this CSS to toggle the navigation visibility */
+.show-navbar {
+  display: block !important; /* Show the navigation menu */
 }
