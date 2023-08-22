@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ff5f5f;
+}
+
+/* Top bar ---  */
+.logo {
+  width: 17%;
+  height: 50px;
+  float: left;
+}
+.logo img {
+  width: 100%;
+  height: 55px;
+}
+
+.name-heading {
+  width: 83%;
+  background-image: linear-gradient(
+    to right,
+    #ff5f5f,
+    #ff0000,
+    rgb(255, 92, 87),
+    #ff2222
+  );
+  height: auto;
+  margin-left: 17%;
+}
+.main .name-heading h2 {
+  padding: 13px;
+}
+
+.prof-info {
+  /* border: 2px solid red; */
+  height: auto;
+  float: right;
+  width: 83%;
+  background-color: rgba(160, 255, 255, 0.619);
+}
+.prof-info img {
+  margin-left: 20%;
+  width: 100px;
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px solid black;
+  border-radius: 45%;
+  background-image: linear-gradient(rgb(255, 221, 159), rgb(255, 192, 74));
+}
+.prof-info p {
+  font-weight: bold;
+  float: left;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+.profile-det {
+  float: right;
+  width: 83%;
+}
+
+.profile-det .personal-info {
+  background-color: #ffdda9;
+  padding: 40px;
+}
+
+/* Navigation bar --- */
+.dashboard .nav {
+  width: 17%;
+  height: auto;
+  float: left;
+  background-color: rgb(255, 201, 102);
+  background-image: linear-gradient(rgb(255, 201, 102), orange);
+}
+.dashboard .nav .prof img {
+  margin: auto;
+}
+.dashboard .nav .prof {
+  text-align: center;
+  margin: 10px;
+}
+.dashboard .nav img {
+  width: 50px;
+  border: 3px solid white;
+  border-radius: 30px;
+}
+.dashboard .nav a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 10px;
+}
+.dashboard .nav a:hover {
+  background-color: rgb(204, 133, 0);
+}
+
+.dash h2 {
+  text-align: center;
+}
+
+
+.highlights {
+  float: left;
+  border: 1px solid black;
+  width: auto;
+  height: 100%;
+  margin: 5px;
+}
+.highlights p {
+  margin: 4px;
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 865px) {
+  .name-heading {
+    margin-left: 20px;
+    width: auto;
+  }
+}
+
+/* prof div */
+@media screen and (max-width: 865px) {
+  .dashboard .dash .prof-info {
+    float: none;
+    text-align: center;
+    margin: auto;
+    margin-right: 0;
+    margin-bottom: 4pxś;
+    width: auto;
+  }
+}
+
+
+/* Hamburger style */
+
+@media screen and (max-width: 645px) {
+  .profile-det {
+    width: 100%;
+  }
+  .dashboard .nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 727px) {
+  .dashboard .nav i {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 645px) {
+  .main .logo {
+    display: none;
+  }
+  .dashboard .dash .prof-info p {
+    padding-left: 5px;
+  }
+}
+
+/* Hide the navigation menu by default */
+.navbar {
+  height: auto;
+  background-color: rgb(255, 201, 102);
+  background-image: linear-gradient(rgb(255, 201, 102), orange);
+}
+.navbar a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 10px;
+}
+.navbar a:hover {
+  background-color: rgb(204, 133, 0);
+}
+
+.navbar {
+  display: none;
+  height: 200px;
+  overflow-y: scroll;
+}
+.navbar::-webkit-scrollbar {
+  display: none;
+}
+
+.menu-toggle i {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.navbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.menu-toggle {
+  display: none; /* Hide the hamburger icon by default */
+}
+.navbar a::-webkit-scrollbar {
+  display: none; /* Chrome and Safari */
+}
+.navbar a {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.menu-toggle {
+  /* display: block; */
+  margin: 5px;
+}
+
+/* Media query to show/hide elements based on screen width */
+@media screen and (max-width: 645px) {
+  .navbar {
+    transition: 1s ease;
+    display: none; /* Hide the navigation menu */
+    width: 100%;
+    height: 200px;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .menu-toggle i {
+    display: block;
+  }
+}
+
+/* Add this CSS to toggle the navigation visibility */
+.show-navbar {
+  display: block !important; /* Show the navigation menu */
+}
+
+/* Scroll to top button */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: 1px solid black;
+  outline: none;
+  background-color: #00d9ff;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 25px;
+}
+
+button i {
+  color: black;
+  font-weight: bold;
+}
+#myBtn:hover {
+  background-color: #008ba4;
+}
