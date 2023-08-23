@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #ff5f5f;
+  background-color: #ffe3b0;
 }
 
 /* Top bar ---  */
@@ -22,10 +22,9 @@ body {
   width: 83%;
   background-image: linear-gradient(
     to right,
-    #ff5f5f,
-    #ff0000,
-    rgb(255, 92, 87),
-    #ff2222
+    #ffe3b0,
+    #ffcd70,
+    #ffb224
   );
   height: auto;
   margin-left: 17%;
@@ -395,7 +394,7 @@ body {
   font-size: 18px;
   border: 1px solid black;
   outline: none;
-  background-color: #00d9ff;
+  background-color: #ffe018;
   color: white;
   cursor: pointer;
   padding: 15px;
@@ -408,5 +407,5 @@ button i{
 
 }
 #myBtn:hover {
-  background-color: #008ba4;
+  background-color: #edcf10;
 }
